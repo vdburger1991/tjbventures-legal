@@ -1,18 +1,15 @@
 ---
-title: "Orla Privacy Policy"
+layout: default
+title: Privacy Policy
+eyebrow: Privacy
+effective: 4 August 2026
+updated: 4 August 2026
 permalink: /privacy.html
 ---
-
-# Orla Privacy Policy
-
-**Effective date:** 4 August 2026
-**Last updated:** 4 August 2026
 
 TJB Ventures FZE, a company registered in Ajman Free Zone, United Arab Emirates ("Orla", "we", "us"), publishes the Orla app. This policy explains what happens to your information.
 
 Orla runs no server that holds your health information. There is no Orla account, no login, and no database of ours containing what you log.
-
----
 
 ## 1. What you log in Orla
 
@@ -22,7 +19,7 @@ Symptoms, severity, cycle dates, hormone therapy (type, dose, route, start and s
 
 **Who can see it.** You. We cannot. It is not sent to any server we operate, because we do not operate one.
 
-**iCloud sync.** If you turn on iCloud sync, a copy of this information is stored in your own private iCloud database so it is available across your devices and survives losing a phone. Apple encrypts it and holds it under your Apple ID. We have no access to it and no way to read it. Sync is off unless you turn it on. Apple's handling of iCloud data is described at https://www.apple.com/legal/privacy/.
+**iCloud sync.** If you turn on iCloud sync, a copy of this information is stored in your own private iCloud database so it is available across your devices and survives losing a phone. Apple encrypts it and holds it under your Apple ID. We have no access to it and no way to read it. Sync is off unless you turn it on. Apple's handling of iCloud data is described at [apple.com/legal/privacy](https://www.apple.com/legal/privacy/).
 
 ## 2. The questions asked before you subscribe
 
@@ -41,7 +38,7 @@ If you grant Health permission, Orla reads wrist temperature, heart rate variabi
 - Orla reads this data live, at the moment a screen displays it.
 - Orla never copies it into its own storage, never includes it in iCloud sync, and never puts it in a PDF export.
 - Orla never writes anything back to Apple Health.
-- You can change or withdraw Health permission at any time in iOS Settings, under Privacy & Security, then Health, then Orla.
+- You can change or withdraw Health permission at any time in iOS Settings, under Privacy &amp; Security, then Health, then Orla.
 
 ## 4. Subscription information
 
@@ -51,7 +48,7 @@ Orla uses RevenueCat to manage App Store subscriptions. RevenueCat is the only t
 - your subscription status and purchase history (plan, price, renewal, cancellation)
 - basic technical information such as device model, operating system version, app version, and country
 
-RevenueCat receives no symptom, cycle, hormone therapy, note, or Apple Health information. It has no technical route to that data. RevenueCat acts as our processor for subscription information. Its privacy policy is at https://www.revenuecat.com/privacy/.
+RevenueCat receives no symptom, cycle, hormone therapy, note, or Apple Health information. It has no technical route to that data. RevenueCat acts as our processor for subscription information. Its privacy policy is at [revenuecat.com/privacy](https://www.revenuecat.com/privacy/).
 
 Payment itself is handled entirely by Apple. We never see your card details.
 
@@ -119,8 +116,8 @@ We will update the date at the top when this policy changes, and will tell you i
 
 ## 15. Contact
 
-TJB Ventures FZE
-Building C1, Ajman Free Zone, United Arab Emirates
-info@tjbventures.ai
+TJB Ventures FZE  
+Building C1, Ajman Free Zone, United Arab Emirates  
+[info@tjbventures.ai](mailto:info@tjbventures.ai)
 
-Privacy queries: info@tjbventures.ai
+Privacy queries: [info@tjbventures.ai](mailto:info@tjbventures.ai)
