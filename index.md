@@ -6,4 +6,4 @@ title: "Orla — Legal"
 
 Legal documents for the Orla app.
 
-- [Privacy Policy](privacy/)
+- [Privacy Policy](privacy.html)

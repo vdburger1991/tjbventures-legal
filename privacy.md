@@ -1,6 +1,6 @@
 ---
 title: "Orla Privacy Policy"
-permalink: /privacy/
+permalink: /privacy.html
 ---
 
 # Orla Privacy Policy
