@@ -3,7 +3,7 @@ layout: default
 title: Privacy Policy
 eyebrow: Privacy
 effective: 4 August 2026
-updated: 4 August 2026
+updated: 18 August 2026
 permalink: /privacy.html
 ---
 
@@ -19,7 +19,7 @@ Symptoms, severity, cycle dates, hormone therapy (type, dose, route, start and s
 
 **Who can see it.** You. We cannot. It is not sent to any server we operate, because we do not operate one.
 
-**iCloud sync.** If you turn on iCloud sync, a copy of this information is stored in your own private iCloud database so it is available across your devices and survives losing a phone. Apple encrypts it and holds it under your Apple ID. We have no access to it and no way to read it. Sync is off unless you turn it on. Apple's handling of iCloud data is described at [apple.com/legal/privacy](https://www.apple.com/legal/privacy/).
+**iCloud sync.** This version of Orla does not offer iCloud sync. The app never sends your records to iCloud and never copies them to another device; they exist only in the app's storage described above. If a future version adds an optional sync feature, it will be off unless you turn it on, and this policy will be updated before it appears.
 
 ## 2. The questions asked before you subscribe
 
@@ -74,9 +74,9 @@ When you generate a summary for a medical appointment, the PDF is created on you
 
 ## 8. Deleting your information
 
-In Settings, "Delete all my data" permanently removes everything the app holds: your logged symptoms, cycle, therapy and supplement records, notes, your consent record, and, where iCloud sync has been used, the corresponding records in your private iCloud database.
+In Settings, "Delete all my data" permanently removes everything the app holds: your logged symptoms, cycle, therapy and supplement records, notes, and your consent record.
 
-Deleting the app from your device removes its local storage. If you used iCloud sync, use the in-app deletion first, or remove Orla's data separately in iOS Settings under your Apple ID, iCloud, then Manage Account Storage.
+Deleting the app from your device removes its local storage.
 
 Deletion is not reversible and we cannot restore data for you, because we never held it.
 
@@ -84,13 +84,13 @@ Your subscription is separate. Deleting your data does not cancel a subscription
 
 ## 9. How long information is kept
 
-On-device and iCloud information is kept until you delete it. Subscription records held by RevenueCat are kept for the life of the subscription and for the period afterwards required for financial and tax record-keeping.
+On-device information is kept until you delete it. Subscription records held by RevenueCat are kept for the life of the subscription and for the period afterwards required for financial and tax record-keeping.
 
 ## 10. Your rights
 
 **United Kingdom and European Economic Area (UK GDPR / GDPR).** Health information is a special category of personal data and receives additional protection. Our lawful basis for handling what you log is your explicit consent, given on the consent screen in the app and withdrawable at any time by deleting your data or by declining to continue. Our lawful basis for subscription information is performance of our contract with you.
 
-You have the right to access, correct, delete, restrict, and object to processing, and to data portability. Because what you log stays on your device and in your own iCloud, you exercise most of these directly: your records are visible and editable in the app, exportable as a PDF, and deletable in Settings. For subscription information, contact us using the details below. You may also complain to your national supervisory authority, or to the Information Commissioner's Office in the UK.
+You have the right to access, correct, delete, restrict, and object to processing, and to data portability. Because what you log stays on your device, you exercise most of these directly: your records are visible and editable in the app, exportable as a PDF, and deletable in Settings. For subscription information, contact us using the details below. You may also complain to your national supervisory authority, or to the Information Commissioner's Office in the UK.
 
 **California (CCPA/CPRA).** We do not sell or share personal information as those terms are defined, and we do not use sensitive personal information for purposes requiring an opt-out. You may request to know, delete, or correct, and you will not be treated differently for asking.
 
@@ -108,7 +108,7 @@ We hold no health data, so there is no international transfer of it by us. Subsc
 
 ## 13. Security
 
-Your records rely on Apple's device encryption and, where sync is enabled, on Apple's iCloud encryption. No system is absolutely secure, but Orla is built so that the smallest possible amount of information ever leaves your device.
+Your records rely on Apple's device encryption. No system is absolutely secure, but Orla is built so that the smallest possible amount of information ever leaves your device.
 
 ## 14. Changes
 
