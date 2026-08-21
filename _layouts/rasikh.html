@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} · Rasikh</title>
+{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#F2F2EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0D0F" media="(prefers-color-scheme: dark)">
+<style>
+/* ---------------------------------------------------------------------------
+   Rasikh's own layout. Deliberately a SECOND layout rather than a palette
+   swapped into `default.html`: Orla's privacy policy is live at
+   legal.tjbventures.ai/privacy.html and editing the layout it renders through
+   would put that page at risk for a change that has nothing to do with it.
+   default.html stays byte-identical.
+
+   Every value below is Rasikh's, read from
+   Packages/DesignSystem/Sources/DesignSystem/Color/ColorTokens.swift.
+   Unlike Orla's, this layout carries both themes, because the app has both and
+   the design language treats them as equals rather than as a light design with
+   a dark variant.
+   --------------------------------------------------------------------------- */
+:root{
+  --base:#F2F2EF;        /* surface.base      */
+  --raised:#FFFFFF;      /* surface.raised    */
+  --ink:#23282C;         /* content.primary   */
+  --ink-2:#47525A;       /* content.secondary */
+  --ink-3:#5C666F;       /* content.tertiary  */
+  --accent:#2F6E59;      /* accent.base       */
+  --accent-wash:rgba(47,110,89,.10);
+  --hairline:rgba(0,0,0,.10);
+  --select:rgba(47,110,89,.16);
+  --serif:ui-serif,"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --base:#0B0D0F; --raised:#14171A;
+    --ink:#E9ECEC; --ink-2:#99A2A6; --ink-3:#737D85;
+    --accent:#5FA88F; --accent-wash:rgba(95,168,143,.14);
+    --hairline:rgba(255,255,255,.10);
+    --select:rgba(95,168,143,.20);
+  }
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--base);color:var(--ink);font-family:var(--sans);
+  font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:42rem;margin:0 auto;padding:clamp(1.75rem,5vw,3.5rem) clamp(1.25rem,5vw,2rem) 4rem;}
+a{color:var(--accent)}
+
+.masthead{margin-bottom:2.4rem}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;font-weight:600;
+  color:var(--accent);margin:0 0 .9rem}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(2rem,7vw,2.9rem);line-height:1.1;
+  letter-spacing:-.01em;color:var(--ink);margin:0}
+/* Physical margin-left, not margin-inline-start: this span is dir="rtl", so its own
+   inline-start is the RIGHT edge and the gap would land on the wrong side. */
+h1 .ar{font-size:.62em;color:var(--ink-3);font-weight:400;letter-spacing:0;margin-left:.6rem}
+.meta{color:var(--ink-2);font-size:.92rem;margin:.7rem 0 0}
+.rule{height:2px;width:3.5rem;background:var(--accent);margin:1.6rem 0 0;border-radius:2px}
+
+.content h2{font-family:var(--serif);font-weight:600;font-size:1.5rem;line-height:1.25;
+  color:var(--ink);margin:2.6rem 0 .8rem;letter-spacing:-.005em}
+.content h3{font-weight:700;font-size:1.05rem;color:var(--ink);margin:1.8rem 0 .5rem}
+.content p{margin:0 0 1.05rem}
+.content strong{font-weight:700;color:var(--ink)}
+.content a{text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px;
+  text-decoration-color:color-mix(in srgb,var(--accent) 45%,transparent);word-break:break-word}
+.content a:hover{text-decoration-color:var(--accent);text-decoration-thickness:2px}
+.content ul{margin:0 0 1.1rem;padding-left:1.3rem}
+.content li{margin:.4rem 0}
+.content li::marker{color:var(--ink-3)}
+.content hr{border:0;border-top:1px solid var(--hairline);margin:2.6rem 0}
+/* The purposes table is five columns wide. On a phone it cannot fit, and a table that
+   widens the PAGE is the bug — the body must never scroll sideways. So the table scrolls
+   inside its own box instead, with a hairline to show it is a scrollable region. */
+.content table{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;
+  border-collapse:collapse;margin:0 0 1.2rem;font-size:.95rem}
+@media (min-width:46rem){.content table{display:table}}
+.content th,.content td{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--hairline);
+  vertical-align:top;min-width:9rem}
+.content th{color:var(--ink-2);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}
+.content thead th:first-child,.content tbody td:first-child{min-width:11rem}
+
+/* A markdown blockquote becomes the one callout on the page — used for the single
+   sentence that carries the whole email-opt-in section. */
+.content blockquote{margin:1.5rem 0 1.2rem;padding:1.15rem 1.35rem;background:var(--accent-wash);
+  border:0;border-left:3px solid var(--accent);border-radius:0 12px 12px 0}
+.content blockquote p:last-child{margin-bottom:0}
+
+.foot{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--hairline);
+  color:var(--ink-2);font-size:.85rem;line-height:1.6}
+.foot p{margin:.3rem 0}
+.foot a{text-decoration:none}
+.foot a:hover{text-decoration:underline}
+::selection{background:var(--select)}
+
+@media print{
+  body{background:#fff;color:#000;font-size:11pt}
+  .content blockquote{border:1px solid #999;background:transparent}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <p class="eyebrow">Rasikh · {{ page.eyebrow | default: "Legal" }}</p>
+      <h1>{{ page.title }}<span class="ar" lang="ar" dir="rtl">راسخ</span></h1>
+      {% if page.effective %}<p class="meta">Effective {{ page.effective }}{% if page.updated %} · Last updated {{ page.updated }}{% endif %}</p>{% endif %}
+      <div class="rule"></div>
+    </header>
+    <main class="content">
+      {{ content }}
+    </main>
+    <footer class="foot">
+      <p>Rasikh is published by TJB Ventures FZE, Ajman Free Zone, United Arab Emirates.</p>
+      <p><a href="/">Legal home</a> &middot; <a href="/rasikh-privacy.html">Rasikh Privacy Policy</a></p>
+    </footer>
+  </div>
+</body>
+</html>
