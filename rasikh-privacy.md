@@ -8,6 +8,16 @@ updated: 21 August 2026
 permalink: /rasikh-privacy.html
 ---
 
+TJB Ventures FZE is a free zone establishment incorporated in Ajman Free Zone, United Arab Emirates ("**we**", "**us**", "**our**"). We publish the Rasikh mobile application ("**Rasikh**", "**the app**").
+
+This Privacy Notice (the "**Notice**") describes how we collect, process, use and disclose your personal data as a "data controller". "Personal data" means any information that relates to an identified or identifiable individual.
+
+**In this Notice, "we" means the company and "Rasikh" means the software on your phone.** That distinction matters more here than it usually does, because almost everything this Notice describes is something the app does on your device without us, and we have said which is which throughout.
+
+**We are the data controller for one thing only: your email address, if you choose to give it to us.**
+
+---
+
 ## 1. What this Notice covers
 
 We have developed this Notice, which:
