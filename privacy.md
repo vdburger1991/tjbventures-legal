@@ -3,7 +3,7 @@ layout: default
 title: Privacy Policy
 eyebrow: Privacy
 effective: 4 August 2026
-updated: 18 August 2026
+updated: 5 September 2026
 permalink: /privacy.html
 ---
 
@@ -66,6 +66,8 @@ When you generate a summary for a medical appointment, the PDF is created on you
 
 ## 7. What Orla does not do
 
+These are statements about the **app**. Our marketing website is a separate thing and works differently — see section 14.
+
 - No advertising, no ad networks, no ad identifiers.
 - No third-party analytics or crash-reporting software of any kind.
 - No sale or rental of personal information to anyone, for any purpose.
@@ -92,7 +94,7 @@ On-device information is kept until you delete it. Subscription records held by 
 
 You have the right to access, correct, delete, restrict, and object to processing, and to data portability. Because what you log stays on your device, you exercise most of these directly: your records are visible and editable in the app, exportable as a PDF, and deletable in Settings. For subscription information, contact us using the details below. You may also complain to your national supervisory authority, or to the Information Commissioner's Office in the UK.
 
-**California (CCPA/CPRA).** We do not sell or share personal information as those terms are defined, and we do not use sensitive personal information for purposes requiring an opt-out. You may request to know, delete, or correct, and you will not be treated differently for asking.
+**California (CCPA/CPRA).** We do not sell or share personal information as those terms are defined, and we do not use sensitive personal information for purposes requiring an opt-out. The advertising pixel on our marketing website, described in section 14, is operated with Meta's Limited Data Use setting, which restricts what Meta may do with a California resident's data. You may request to know, delete, or correct, and you will not be treated differently for asking.
 
 **United Arab Emirates (PDPL).** We handle personal data under Federal Decree-Law No. 45 of 2021. You may contact us to exercise the rights that law provides.
 
@@ -110,11 +112,23 @@ We hold no health data, so there is no international transfer of it by us. Subsc
 
 Your records rely on Apple's device encryption. No system is absolutely secure, but Orla is built so that the smallest possible amount of information ever leaves your device.
 
-## 14. Changes
+## 14. Our website
+
+This section is about **orla.tjbventures.ai**, the page we advertise. It is not about the app, and nothing described here can reach anything you have logged in Orla.
+
+That page carries the **Meta Pixel**, a small piece of code from Meta Platforms, so that we can tell whether the ads we pay for actually bring anyone. It records that the page was loaded, which ad brought you (we add a campaign tag to our own links), and whether you tapped the "Download on the App Store" button. To do that it passes Meta your IP address, your browser and device details, and the page address, and it stores a cookie in your browser. If you have a Facebook or Instagram account, Meta may connect that visit to it.
+
+No health information is involved. The website holds none, asks for none, and cannot read the app.
+
+**Consent.** Outside the United States the pixel is switched off before it starts, and stays off unless you press Accept on the bar at the bottom of the page. Pressing Decline leaves it off. Inside the United States it runs, with Meta's Limited Data Use setting applied.
+
+**Opting out.** Press Decline, or clear the site's cookies, or use your browser's tracking protection. You can also change what Meta does with advertising data in your own Meta account settings, at [accountscenter.facebook.com](https://accountscenter.facebook.com). None of this affects the app in any way.
+
+## 15. Changes
 
 We will update the date at the top when this policy changes, and will tell you in the app if the change is significant.
 
-## 15. Contact
+## 16. Contact
 
 TJB Ventures FZE  
 Building C1, Ajman Free Zone, United Arab Emirates  
