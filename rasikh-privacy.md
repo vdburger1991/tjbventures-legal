@@ -4,7 +4,7 @@ title: Privacy Notice
 eyebrow: Privacy
 description: What happens to your information in Rasikh. Your location and your record of practice never leave your device.
 effective: 21 August 2026
-updated: 21 August 2026
+updated: 7 September 2026
 permalink: /rasikh-privacy.html
 ---
 
@@ -81,7 +81,11 @@ This is also how you obtain a portable copy of your data. You do not need to ask
 
 **Notifications.** Prayer-time alerts are scheduled by iOS on your device, from times your device calculated. No server is involved in delivering them and no notification is sent to you from outside your phone. We cannot tell whether an alert reached you — iOS does not report that to apps, and Rasikh makes no claim about it.
 
-**The widget.** To display a home screen widget, the app writes a short list of upcoming prayer times, the time zone they were calculated for, and the time it last wrote them into a private storage area that the app and its widget both read. **It is written whether or not you have added the widget**, because it is produced whenever the app calculates your prayer times, so that a widget is correct the moment you add one. It contains no coordinate, no calculation method, and nothing you have logged.
+**The adhan.** You can have Rasikh play the adhan in full when a prayer-time alert arrives. The recording is inside the app you installed. Nothing is streamed, no network request is made, and playing it creates no record of any kind.
+
+**Logging from the alert.** A prayer-time alert carries a "Log this prayer" action. Tapping it writes to the record of practice described in section 5, on your device, and sends nothing anywhere.
+
+**The widget.** To display a home screen or Lock Screen widget, the app writes into a private storage area that the app and its widget both read. What it writes is: the prayer times for the current day and the next one, the time zone they were calculated for, your device's language and region setting and the digit style that follows from it, and the time it last wrote them. **It is written whether or not you have added the widget**, because it is produced whenever the app calculates your prayer times, so that a widget is correct the moment you add one. It contains no coordinate, no calculation method, and nothing you have logged.
 
 That area is on your device. Nothing in it is transmitted anywhere and no other app can read it. Unlike your record of practice it is not held at the strongest protection level, because a Lock Screen widget must be able to draw while your phone is locked. Removing the app removes it.
 
