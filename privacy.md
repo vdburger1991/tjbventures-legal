@@ -48,17 +48,9 @@ Orla uses RevenueCat to manage App Store subscriptions. RevenueCat is the only t
 - your subscription status and purchase history (plan, price, renewal, cancellation)
 - basic technical information such as device model, operating system version, app version, and country
 
-**Where people stop before subscribing.** From version 1.0.4, Orla also tells RevenueCat the first time each of seven steps happens on your installation:
+**Where people stop before subscribing.** From version 1.0.4, Orla also tells RevenueCat the date and time a person first reaches each step of the set-up screens and the subscription screen. The list of step names is fixed in the app — each one names a screen and its place in that sequence, never an answer, a symptom, or free text, and it does not change with anything you enter or choose. Orla also tells RevenueCat when a plan is tapped, a purchase starts, a purchase ends without access, or the payment sheet is dismissed.
 
-- onboarding was started
-- onboarding was finished
-- the subscription screen was shown
-- a plan was tapped
-- a purchase was started
-- a purchase ended without access
-- the payment sheet was dismissed
-
-Each of the seven carries a date and time and nothing else. They are attached to the anonymous installation identifier listed above, not to a name, an email address, or an account. We use them for one thing: to see at which step people stop before subscribing, so that we can fix that step. They are not used to advertise to you, and not used to track you across other apps or websites. RevenueCat keeps them on the same basis as the rest of the subscription record described in section 9.
+Each step carries a date and time and nothing else. They are attached to the anonymous installation identifier listed above, not to a name, an email address, or an account. We use them for one thing: to see at which step people stop before subscribing, so that we can fix that step. They are not used to advertise to you, and not used to track you across other apps or websites. RevenueCat keeps them on the same basis as the rest of the subscription record described in section 9.
 
 RevenueCat receives no symptom, cycle, hormone therapy, note, or Apple Health information. It has no technical route to that data. RevenueCat acts as our processor for subscription information. Its privacy policy is at [revenuecat.com/privacy](https://www.revenuecat.com/privacy/).
 
