@@ -3,7 +3,7 @@ layout: default
 title: Privacy Policy
 eyebrow: Privacy
 effective: 4 August 2026
-updated: 5 September 2026
+updated: [release date]
 permalink: /privacy.html
 ---
 
@@ -48,6 +48,18 @@ Orla uses RevenueCat to manage App Store subscriptions. RevenueCat is the only t
 - your subscription status and purchase history (plan, price, renewal, cancellation)
 - basic technical information such as device model, operating system version, app version, and country
 
+**Where people stop before subscribing.** From version 1.0.4, Orla also tells RevenueCat the first time each of seven steps happens on your installation:
+
+- onboarding was started
+- onboarding was finished
+- the subscription screen was shown
+- a plan was tapped
+- a purchase was started
+- a purchase ended without access
+- the payment sheet was dismissed
+
+Each of the seven carries a date and time and nothing else. They are attached to the anonymous installation identifier listed above, not to a name, an email address, or an account. We use them for one thing: to see at which step people stop before subscribing, so that we can fix that step. They are not used to advertise to you, and not used to track you across other apps or websites. RevenueCat keeps them on the same basis as the rest of the subscription record described in section 9.
+
 RevenueCat receives no symptom, cycle, hormone therapy, note, or Apple Health information. It has no technical route to that data. RevenueCat acts as our processor for subscription information. Its privacy policy is at [revenuecat.com/privacy](https://www.revenuecat.com/privacy/).
 
 Payment itself is handled entirely by Apple. We never see your card details.
@@ -60,6 +72,8 @@ Orla records a small number of event names on your device (for example, that an 
 - are written to the device's system log and stay on the device
 - are not connected to any analytics, attribution, crash-reporting, or advertising service, because the app contains none
 
+The seven subscription steps described in section 4 are the one exception, and they are the whole of it. Those seven names, each with a date and time, are sent to RevenueCat and are used for analytics. Every other event name stays on your device.
+
 ## 6. PDF exports
 
 When you generate a summary for a medical appointment, the PDF is created on your device. Where it goes next is entirely your choice, through the standard iOS share options (Mail, Messages, Files, AirDrop, printing). Once you share a file, this policy no longer governs it, and the app has no visibility into or control over it.
@@ -69,7 +83,7 @@ When you generate a summary for a medical appointment, the PDF is created on you
 These are statements about the **app**. Our marketing website is a separate thing and works differently — see section 14.
 
 - No advertising, no ad networks, no ad identifiers.
-- No third-party analytics or crash-reporting software of any kind.
+- No third-party analytics or crash-reporting software of any kind. The seven subscription steps in section 4 go through RevenueCat, the subscription component described there, and not through an analytics product.
 - No sale or rental of personal information to anyone, for any purpose.
 - No tracking of you across other companies' apps or websites.
 - No sharing of your health information with data brokers, advertisers, employers, or insurers.
@@ -80,13 +94,15 @@ In Settings, "Delete all my data" permanently removes everything the app holds: 
 
 Deleting the app from your device removes its local storage.
 
+The seven subscription steps described in section 4 are held by RevenueCat, not by the app, so deleting your data in the app does not remove them. They contain no health information, only a date and time for each step.
+
 Deletion is not reversible and we cannot restore data for you, because we never held it.
 
 Your subscription is separate. Deleting your data does not cancel a subscription. Manage or cancel it in the App Store under Subscriptions.
 
 ## 9. How long information is kept
 
-On-device information is kept until you delete it. Subscription records held by RevenueCat are kept for the life of the subscription and for the period afterwards required for financial and tax record-keeping.
+On-device information is kept until you delete it. Subscription records held by RevenueCat are kept for the life of the subscription and for the period afterwards required for financial and tax record-keeping. The seven subscription steps described in section 4 are part of that record and are kept for the same period.
 
 ## 10. Your rights
 
@@ -106,7 +122,7 @@ Orla is intended for adults and is not directed at anyone under 18. We do not kn
 
 ## 12. International transfers
 
-We hold no health data, so there is no international transfer of it by us. Subscription information is processed by RevenueCat, which operates in the United States, under contractual safeguards including the applicable standard contractual clauses.
+We hold no health data, so there is no international transfer of it by us. Subscription information, including the seven subscription steps described in section 4, is processed by RevenueCat, which operates in the United States, under contractual safeguards including the applicable standard contractual clauses.
 
 ## 13. Security
 
