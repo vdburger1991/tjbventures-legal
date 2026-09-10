@@ -14,7 +14,9 @@ This Privacy Notice (the "**Notice**") describes how we collect, process, use an
 
 **In this Notice, "we" means the company and "Rasikh" means the software on your phone.** That distinction matters more here than it usually does, because much of what this Notice describes is something the app does on your device without us, and we have said which is which throughout.
 
-**This Notice changed substantially on 10 September 2026, and it changed in the direction that costs us something.** Earlier versions said that Rasikh had no account, no analytics, and exactly one thing that could leave your device. That was true of every version published up to and including 1.0. It is not true of this one. This version of the app adds an **optional account**, **product analytics**, and a **link-attribution service**, and the sections below say plainly what each of them receives. We have written the change into this document before the version that makes it true is released, which is what section 21 promises and this is us keeping it.
+**This Notice changed substantially on 10 September 2026, and it changed in the direction that costs us something.** During development Rasikh had no account, no analytics, and exactly one thing that could leave your device. **Version 1.0 — this version, and the first one ever published — is not like that.** It requires an **account**, it collects **product analytics** which you can switch off, and it uses a **link-attribution service** to measure which ad or link brought you here. The sections below say plainly what each of them receives.
+
+**An earlier draft of this paragraph said the old description was "true of every version published up to and including 1.0".** That was wrong twice over: 1.0 is this version, and no version of Rasikh had been published at all. It is corrected here rather than quietly, because a privacy notice that misdescribes its own history is the one kind of error this document cannot afford.
 
 > **What did not change, and is now the load-bearing promise rather than a background assumption: your record of practice and your location never leave your device.** Not to us, not to any company we work with, not in an analytics event, not in a crash report, not in an account. There is no code path by which a prayer you logged, a tasbīḥ count, or a coordinate can reach a network, and an automated check run before every release fails the build if one appears.
 
@@ -43,7 +45,7 @@ We have developed this Notice, which:
 | Your location, prayer times, record of practice, dhikr counts and widget data | On your device only. We never receive it, and neither does anyone we work with | To show prayer times, schedule alerts, point to the qibla, and keep the record you asked the app to keep | We are not a recipient of this data. The app stores it on your device because you asked for a feature that requires it — storage strictly necessary for a service you explicitly requested | Until you delete it or remove the app |
 | Your email address, your name if a sign-in provider gives us one, and an account identifier — **only if you create an account** | Supabase, our authentication provider | So that you can sign in, and so that a future version can restore your settings on a new phone | Performance of the service you asked for (Article 6(1)(b)) and, because being a Rasikh account holder indicates a religious affiliation, **your explicit consent** (Article 9(2)(a)) given when you create the account | Until you delete the account. See section 17 |
 | A fixed, short list of things you did in the app — which screens you opened, which features you used, that a log entry happened — with an account identifier attached if you are signed in | PostHog, our analytics provider | To see which parts of the app are used and where people get stuck, so that we fix the right things | **Your consent** (Articles 6(1)(a) and 9(2)(a)) | See section 16 |
-| The fact that an install came from a particular advertisement or link, and the device-level identifier iOS gives us for our own app (the IDFV) | AppsFlyer, our attribution provider | To know which advertisement or link brought someone to the app, and to open the right screen when you follow a link to it | **Your consent** (Article 6(1)(a)); we do not rely on legitimate interests for this | See section 16 |
+| The fact that an install came from a particular advertisement or link; the device-level identifier iOS gives us for our own app (the IDFV); and, **only if you allow it when asked, your device's advertising identifier (the IDFA)** | AppsFlyer, our attribution provider | To know which advertisement or link brought someone to the app, and to open the right screen when you follow a link to it | **Your consent** (Article 6(1)(a)); we do not rely on legitimate interests for this | See section 16 |
 | An account identifier and, in future, a purchase receipt | RevenueCat, our subscription provider | So that a paid tier, if we build one, does not require moving anyone's account | Performance of the service you asked for (Article 6(1)(b)) | Until you delete the account |
 | Your email address, if you subscribe to updates | Kit, our mailing provider, in the United States | To send you occasional updates about the app | Your explicit consent | See section 16 |
 
@@ -113,9 +115,11 @@ Rasikh includes an optional "Email updates" screen.
 
 **Unsubscribing.** Every email carries an unsubscribe link. See section 16 for what happens to your address afterwards.
 
-## 8. Your account — optional, and it holds four things
+## 8. Your account — required, and it holds four things
 
-Rasikh offers an account. **It is optional and it is not a gate.** Every prayer time, every alert, the qibla, the tracker, the tasbīḥ and the adhkār work exactly the same whether you are signed in or not, and no screen asks you twice.
+Rasikh requires an account. **This changed on 10 September 2026 and it is a real change**: an earlier draft of this Notice said the account was optional and not a gate, and in the shipped app it is a gate. After you have chosen your location, your calculation method and your alerts, Rasikh asks you to sign in and does not continue until you have.
+
+**What the account does not do is worth saying in the same breath.** It holds the four things listed below and nothing else. Your record of practice is not in it, does not sync, and stays on your phone whether you are signed in or not — signing in does not upload it and deleting your account does not delete it. Once you have signed in on a device, Rasikh keeps working offline exactly as before; only the first sign-in needs a connection.
 
 **What an account is for.** So that a future version can put your settings back on a new phone, and so that if we ever build a paid tier, buying it does not require moving your identity around. Today it does very little, and we would rather say that than dress it up.
 
@@ -175,17 +179,23 @@ Rasikh sends a short, fixed list of records about how the app is used to **PostH
 
 Rasikh uses **AppsFlyer** for two things: opening the right screen when you follow a link to the app, and telling us which advertisement or link an install came from.
 
-**What AppsFlyer receives.** That the app was installed or opened; the identifier iOS gives an app for the device it is on — Apple calls it the **identifier for vendor**, it is specific to our app alone, and it is regenerated when you delete the app; your device's IP address, and the kind of device and iOS version; the parameters carried by a link you followed; and, if you are signed in, your account identifier.
+**What AppsFlyer receives.** That the app was installed or opened; the identifier iOS gives an app for the device it is on — Apple calls it the **identifier for vendor**, it is specific to our app alone, and it is regenerated when you delete the app; your device's IP address, and the kind of device and iOS version; the parameters carried by a link you followed; if you are signed in, your account identifier; and, **if you allowed tracking when asked, your device's advertising identifier**.
 
-**What it does not receive, and this is the part that matters.** **No advertising identifier — no IDFA.** Rasikh does not ask for it, does not read it, and does not contain the Apple software component that would allow it to. The absence is verified against the built app before every release, not asserted. Because of that, **Rasikh never shows the "Allow this app to track you across apps and websites?" prompt** — there is nothing for it to ask about.
+**The advertising identifier, and the choice you were given. This changed on 10 September 2026, and the previous version of this Notice said the opposite.** It said Rasikh contained no advertising identifier, never showed iOS's tracking prompt, and could not have asked for one. That is no longer true, and pretending otherwise would be the worst thing this document could do.
 
-It also does not receive your coordinates, your record of practice, your email address, or anything you read in the app.
+Rasikh now **asks**. After you have finished setting the app up and signed in, iOS shows you *"Allow this app to track you across apps and websites?"*, and the screen before it explains, in the app's own words, what the answer is for.
 
-**What we do not do with it.** We do not combine it with data about you from other companies' apps or websites. We do not give it to a data broker. We do not use it to build an advertising profile of you or to have advertisements aimed at you elsewhere. It answers one question — *which advertisement or link brought this install* — and stops there.
+- **If you allow it**, AppsFlyer reads your device's advertising identifier — Apple calls it the IDFA — and uses it to tell us which advertisement or link brought you to Rasikh. That is the whole of its use here.
+- **If you refuse, or never answer, nothing happens.** AppsFlyer receives no advertising identifier, and iOS itself blocks the addresses it would have used to send one. Every feature of the app is identical either way: nothing is withheld, nothing is degraded, and you are not asked again.
+- **You can change your mind at any time** in iOS Settings › Privacy & Security › Tracking, or in iOS Settings › Rasikh.
+
+**What it never receives, whichever way you answered.** Your coordinates. Your record of practice. Your tasbīḥ counts. Your email address. Anything you read in the app.
+
+**What we do not do with it.** We do not give it to a data broker. We do not use it to build an advertising profile of you, and we do not upload it to any advertising platform so that advertisements can be aimed at you elsewhere. It answers one question — *which advertisement or link brought this install* — and stops there. **We are not asking you to take that on trust alone:** it is also why the consent Rasikh sends to AppsFlyer sets *personalised advertising* to **no** for everyone, in every country, whatever you answered about tracking.
 
 **Clipboard.** AppsFlyer's clipboard-based method of recognising a deferred link is **switched off**. Rasikh does not read your clipboard, and you will never see iOS's paste banner because of it.
 
-**How to say no.** Attribution is covered by the same consent choice as analytics in section 9 and by the same switch in Settings.
+**How to say no.** Two separate answers, and either one is enough. The switch in Rasikh's own Settings › Privacy covers attribution exactly as it covers analytics: with it off, AppsFlyer is not started at all. iOS's tracking question covers the advertising identifier specifically: with it refused, AppsFlyer still counts the install but has no advertising identifier to count it by.
 
 ## 11. Purchases
 
@@ -197,11 +207,11 @@ If a future version offers a paid tier, prayer times, notifications, qibla, the 
 
 ## 12. What Rasikh does not do
 
-**In this version of Rasikh all of the following are true. If any of them ceases to be true, we will change it here and say so in the app before the version that changes it is released — not after.** Three items that were on this list until 10 September 2026 have been removed, because this version has analytics, error reporting and attribution. Removing them was the point of this revision; a list of promises is only worth reading if items leave it when they stop being true.
+**In this version of Rasikh all of the following are true. If any of them ceases to be true, we will change it here and say so in the app before the version that changes it is released — not after.** Three items that were on this list until 10 September 2026 have been removed, because this version has analytics, error reporting and attribution. **A fourth left it later the same day: "no advertising identifier and no tracking prompt".** Removing them was the point of this revision; a list of promises is only worth reading if items leave it when they stop being true.
 
 - No advertising **inside the app**: no ad networks, no ad SDK, no advertising identifier, and no advertisements for anyone's product including our own. (The App Store label for the email list reads "Developer's Advertising or Marketing" because that is Apple's name for the category covering a company emailing its own users about its own app. That is what the list is for.)
-- **No advertising identifier and no tracking prompt.** The app does not contain Apple's advertising-identifier component at all, which is why it can never ask for it.
-- No tracking of you across other companies' apps or websites, and no combining of anything in this Notice with data held by another company for advertising or measurement.
+- **No advertisement is ever aimed at you because of anything in this Notice.** The advertising identifier described in section 10 is used to tell us which advertisement brought an install to us. It is not used to put an advertisement in front of you, here or anywhere else, and the consent Rasikh sends its attribution provider refuses personalised advertising for everyone.
+- No combining of your record of practice, your location, or anything you read in the app with data held by another company, for advertising or for anything else. Those never leave your phone at all.
 - No sale or rental of personal data to anyone, for any purpose.
 - No sharing of your location or your record of practice with anyone at all — not with advertisers, not with data brokers, not with the providers named in this Notice, because they never receive it in the first place.
 - **No prayer log, tasbīḥ count or coordinate in any analytics record, any crash report, any account, or any link.**
