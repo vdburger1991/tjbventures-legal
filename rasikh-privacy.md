@@ -93,7 +93,7 @@ Rasikh sends a short, fixed list of usage events to PostHog, our analytics provi
 
 **What it still reveals.** That a person, identified by an account, uses a Muslim daily-practice app, and roughly how often. Under UK and EU law that is information about religious belief. That is why our legal basis is your consent, and why you can withdraw it at any time without losing any feature.
 
-**On or off.** If your phone's region is set to a country in the European Economic Area, the United Kingdom, Guernsey, Jersey, the Isle of Man or Gibraltar, analytics are off until you turn them on. Everywhere else they are on until you turn them off. The switch is in Settings, under Privacy: "Share usage analytics". Turning it off stops new events immediately. To have past events deleted, see section 10.
+**On or off.** If your phone's region is set to a country in the European Economic Area, the United Kingdom, Guernsey, Jersey, the Isle of Man or Gibraltar, Rasikh asks you once, at the end of setup, whether to share usage data. Nothing is sent until you say yes, and saying no is one tap with no effect on any feature. Everywhere else analytics are on until you turn them off. Either way the switch is in Settings, under Privacy: "Share usage analytics". Turning it off stops new events immediately. To have past events deleted, see section 10.
 
 **Kept for.** 12 months, then deleted.
 
