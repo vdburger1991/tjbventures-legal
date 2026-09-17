@@ -3,7 +3,7 @@ layout: default
 title: Privacy Policy
 eyebrow: Privacy
 effective: 4 August 2026
-updated: 9 September 2026
+updated: 17 September 2026
 permalink: /privacy.html
 ---
 
@@ -52,6 +52,8 @@ Orla uses RevenueCat to manage App Store subscriptions. RevenueCat is the only t
 
 Each step carries a date and time and nothing else. They are attached to the anonymous installation identifier listed above, not to a name, an email address, or an account. We use them for one thing: to see at which step people stop before subscribing, so that we can fix that step. They are not used to advertise to you, and not used to track you across other apps or websites. RevenueCat keeps them on the same basis as the rest of the subscription record described in section 9.
 
+**Which advertisement brought you here.** From version 1.0.5, when Orla is first opened it asks Apple for a short token that says whether the download followed a tap on one of our Apple Search Ads advertisements in the App Store, and if so which campaign, ad group and keyword. Apple designs this token so that it identifies the advertisement, not you: it carries no name, no email address, no advertising identifier, and nothing about your searches. Orla passes the token once to RevenueCat, which asks Apple what it stands for and records the answer against the same anonymous installation identifier. We use it for one thing: to see which advertisements bring people to Orla, so that we spend less on the ones that do not. It is not used to advertise to you, and not used to track you across other companies' apps or websites. If the download did not follow one of our advertisements, Apple's answer says so and nothing else is recorded.
+
 RevenueCat receives no symptom, cycle, hormone therapy, note, or Apple Health information. It has no technical route to that data. RevenueCat acts as our processor for subscription information. Its privacy policy is at [revenuecat.com/privacy](https://www.revenuecat.com/privacy/).
 
 Payment itself is handled entirely by Apple. We never see your card details.
@@ -64,7 +66,7 @@ Orla records a small number of event names on your device (for example, that an 
 - are written to the device's system log and stay on the device
 - are not connected to any analytics, attribution, crash-reporting, or advertising service, because the app contains none
 
-The seven subscription steps described in section 4 are the one exception, and they are the whole of it. Those seven names, each with a date and time, are sent to RevenueCat and are used for analytics. Every other event name stays on your device.
+The subscription steps described in section 4 are the one exception, and they are the whole of it. Those step names, each with a date and time, are sent to RevenueCat and are used for analytics. Every other event name stays on your device.
 
 ## 6. PDF exports
 
@@ -74,8 +76,8 @@ When you generate a summary for a medical appointment, the PDF is created on you
 
 These are statements about the **app**. Our marketing website is a separate thing and works differently — see section 14.
 
-- No advertising, no ad networks, no ad identifiers.
-- No third-party analytics or crash-reporting software of any kind. The seven subscription steps in section 4 go through RevenueCat, the subscription component described there, and not through an analytics product.
+- No advertising, no ad networks, no ad identifiers. The one thing Orla asks Apple is whether the download followed one of our own App Store advertisements — see section 4.
+- No third-party analytics or crash-reporting software of any kind. The subscription steps in section 4 go through RevenueCat, the subscription component described there, and not through an analytics product.
 - No sale or rental of personal information to anyone, for any purpose.
 - No tracking of you across other companies' apps or websites.
 - No sharing of your health information with data brokers, advertisers, employers, or insurers.
@@ -86,7 +88,7 @@ In Settings, "Delete all my data" permanently removes everything the app holds: 
 
 Deleting the app from your device removes its local storage.
 
-The seven subscription steps described in section 4 are held by RevenueCat, not by the app, so deleting your data in the app does not remove them. They contain no health information, only a date and time for each step.
+The subscription steps described in section 4 are held by RevenueCat, not by the app, so deleting your data in the app does not remove them. They contain no health information, only a date and time for each step.
 
 Deletion is not reversible and we cannot restore data for you, because we never held it.
 
@@ -94,7 +96,7 @@ Your subscription is separate. Deleting your data does not cancel a subscription
 
 ## 9. How long information is kept
 
-On-device information is kept until you delete it. Subscription records held by RevenueCat are kept for the life of the subscription and for the period afterwards required for financial and tax record-keeping. The seven subscription steps described in section 4 are part of that record and are kept for the same period.
+On-device information is kept until you delete it. Subscription records held by RevenueCat are kept for the life of the subscription and for the period afterwards required for financial and tax record-keeping. The subscription steps described in section 4 are part of that record and are kept for the same period.
 
 ## 10. Your rights
 
@@ -114,7 +116,7 @@ Orla is intended for adults and is not directed at anyone under 18. We do not kn
 
 ## 12. International transfers
 
-We hold no health data, so there is no international transfer of it by us. Subscription information, including the seven subscription steps described in section 4, is processed by RevenueCat, which operates in the United States, under contractual safeguards including the applicable standard contractual clauses.
+We hold no health data, so there is no international transfer of it by us. Subscription information, including the subscription steps described in section 4, is processed by RevenueCat, which operates in the United States, under contractual safeguards including the applicable standard contractual clauses.
 
 ## 13. Security
 
