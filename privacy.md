@@ -3,7 +3,7 @@ layout: default
 title: Privacy Policy
 eyebrow: Privacy
 effective: 4 August 2026
-updated: 17 September 2026
+updated: 29 September 2026
 permalink: /privacy.html
 ---
 
@@ -42,7 +42,7 @@ If you grant Health permission, Orla reads wrist temperature, heart rate variabi
 
 ## 4. Subscription information
 
-Orla uses RevenueCat to manage App Store subscriptions. RevenueCat is the only third-party software component in the app. It receives:
+Orla uses RevenueCat to manage App Store subscriptions. RevenueCat is one of two third-party software components in the app (the other, AppsFlyer, is described in section 4A). It receives:
 
 - an anonymous identifier generated for your installation, not your name or email address
 - your subscription status and purchase history (plan, price, renewal, cancellation)
@@ -58,13 +58,32 @@ RevenueCat receives no symptom, cycle, hormone therapy, note, or Apple Health in
 
 Payment itself is handled entirely by Apple. We never see your card details.
 
+## 4A. Measuring our advertising (AppsFlyer)
+
+From version 1.0.6, Orla includes AppsFlyer, a measurement service. We use it for one thing: to see which of our advertisements, for example on Instagram or in the App Store, led to a download. That lets us stop paying for the ones that do not work.
+
+When you install and open Orla, AppsFlyer receives:
+
+- that the app was installed or opened, and when
+- an identifier Apple gives the app for your device, which is different in every company's apps, and an identifier AppsFlyer creates for this installation
+- basic technical information: device model, operating system version, language, and your IP address, which AppsFlyer uses to work out your approximate country or region and to detect fraudulent installs
+- whether the download followed one of our Apple Search Ads advertisements, the same Apple token described in section 4
+
+AppsFlyer receives **no** symptom, cycle, hormone therapy, supplement, note, or Apple Health information, and nothing you type into the app. It has no technical route to that data. Orla does not read your device's advertising identifier (IDFA) and never asks for permission to track you.
+
+For advertisements on Meta (Instagram and Facebook), Orla uses Apple's SKAdNetwork. With SKAdNetwork, your iPhone itself later tells the advertising network, in a delayed, aggregated form designed by Apple, whether an advertisement led to an install. It carries no identifier for you or your device, and a copy goes to AppsFlyer.
+
+Orla also gives RevenueCat the AppsFlyer installation identifier. This lets us see, in aggregate, whether people who came from an advertisement went on to subscribe. It connects the two services' records for the same installation. It does not connect them to your name, email address, or anything you log.
+
+AppsFlyer acts as our processor. Its privacy policy is at [appsflyer.com/legal/services-privacy-policy](https://www.appsflyer.com/legal/services-privacy-policy/).
+
 ## 5. Diagnostic events
 
 Orla records a small number of event names on your device (for example, that an export was generated) so that faults can be diagnosed. These records:
 
 - contain the name of the event and nothing else, by design; they cannot carry your data
 - are written to the device's system log and stay on the device
-- are not connected to any analytics, attribution, crash-reporting, or advertising service, because the app contains none
+- are not sent to any analytics, attribution, crash-reporting, or advertising service. AppsFlyer, described in section 4A, receives that the app was installed and opened, not these event names
 
 The subscription steps described in section 4 are the one exception, and they are the whole of it. Those step names, each with a date and time, are sent to RevenueCat and are used for analytics. Every other event name stays on your device.
 
@@ -76,8 +95,8 @@ When you generate a summary for a medical appointment, the PDF is created on you
 
 These are statements about the **app**. Our marketing website is a separate thing and works differently — see section 14.
 
-- No advertising, no ad networks, no ad identifiers. The one thing Orla asks Apple is whether the download followed one of our own App Store advertisements — see section 4.
-- No third-party analytics or crash-reporting software of any kind. The subscription steps in section 4 go through RevenueCat, the subscription component described there, and not through an analytics product.
+- No advertising inside the app, and no reading of your advertising identifier (IDFA). Orla never asks for permission to track you. To learn which of our own advertisements led to a download, Orla uses Apple's attribution token (section 4) and AppsFlyer with Apple's SKAdNetwork (section 4A).
+- No crash-reporting software, and no analytics software that can see anything you log. The subscription steps in section 4 go through RevenueCat. AppsFlyer (section 4A) measures installs and app opens only.
 - No sale or rental of personal information to anyone, for any purpose.
 - No tracking of you across other companies' apps or websites.
 - No sharing of your health information with data brokers, advertisers, employers, or insurers.
@@ -90,17 +109,19 @@ Deleting the app from your device removes its local storage.
 
 The subscription steps described in section 4 are held by RevenueCat, not by the app, so deleting your data in the app does not remove them. They contain no health information, only a date and time for each step.
 
+The advertising measurement described in section 4A is held by AppsFlyer, not by the app, so deleting your data in the app does not remove it. It contains no health information. To have it deleted, contact us using the details below.
+
 Deletion is not reversible and we cannot restore data for you, because we never held it.
 
 Your subscription is separate. Deleting your data does not cancel a subscription. Manage or cancel it in the App Store under Subscriptions.
 
 ## 9. How long information is kept
 
-On-device information is kept until you delete it. Subscription records held by RevenueCat are kept for the life of the subscription and for the period afterwards required for financial and tax record-keeping. The subscription steps described in section 4 are part of that record and are kept for the same period.
+On-device information is kept until you delete it. Subscription records held by RevenueCat are kept for the life of the subscription and for the period afterwards required for financial and tax record-keeping. The subscription steps described in section 4 are part of that record and are kept for the same period. The advertising measurement described in section 4A is kept by AppsFlyer for the period set out in its privacy policy, and we use it only to report on our advertising.
 
 ## 10. Your rights
 
-**United Kingdom and European Economic Area (UK GDPR / GDPR).** Health information is a special category of personal data and receives additional protection. Our lawful basis for handling what you log is your explicit consent, given on the consent screen in the app and withdrawable at any time by deleting your data or by declining to continue. Our lawful basis for subscription information is performance of our contract with you.
+**United Kingdom and European Economic Area (UK GDPR / GDPR).** Health information is a special category of personal data and receives additional protection. Our lawful basis for handling what you log is your explicit consent, given on the consent screen in the app and withdrawable at any time by deleting your data or by declining to continue. Our lawful basis for subscription information is performance of our contract with you. Our lawful basis for the advertising measurement in section 4A is our legitimate interest in knowing which of our advertisements work. You can object to it by contacting us.
 
 You have the right to access, correct, delete, restrict, and object to processing, and to data portability. Because what you log stays on your device, you exercise most of these directly: your records are visible and editable in the app, exportable as a PDF, and deletable in Settings. For subscription information, contact us using the details below. You may also complain to your national supervisory authority, or to the Information Commissioner's Office in the UK.
 
@@ -116,7 +137,7 @@ Orla is intended for adults and is not directed at anyone under 18. We do not kn
 
 ## 12. International transfers
 
-We hold no health data, so there is no international transfer of it by us. Subscription information, including the subscription steps described in section 4, is processed by RevenueCat, which operates in the United States, under contractual safeguards including the applicable standard contractual clauses.
+We hold no health data, so there is no international transfer of it by us. Subscription information, including the subscription steps described in section 4, is processed by RevenueCat, which operates in the United States, under contractual safeguards including the applicable standard contractual clauses. The advertising measurement in section 4A is processed by AppsFlyer outside your country, including in the United States and the European Union, under the same kind of safeguards.
 
 ## 13. Security
 
