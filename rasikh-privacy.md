@@ -4,13 +4,13 @@ title: Privacy Notice
 eyebrow: Privacy
 description: What happens to your information in Rasikh. Your location and your record of practice never leave your device.
 effective: 21 August 2026
-updated: 16 September 2026
+updated: 30 September 2026
 permalink: /rasikh-privacy.html
 ---
 
 Rasikh is made by TJB Ventures FZE, a company registered in Ajman Free Zone, United Arab Emirates ("we", "us"). This notice explains what information the Rasikh iOS app handles, what stays on your phone, what reaches us or a company working for us, and what you can do about it. It covers the app only, not our websites.
 
-> **The short version.** Your location, your prayer times and your record of practice stay on your phone. We never receive them, and neither does any company we work with. The app requires an account, which holds your email address and little else. It sends a short, fixed list of usage events to an analytics service, which you can switch off. It uses an attribution service to learn which advertisement or link brought you to the app. Each of these is described below, with the name of the company involved.
+> **The short version.** Your location, your prayer times and your record of practice stay on your phone. We never receive them, and neither does any company we work with. The app requires an account, which holds your email address and little else. It sends a short, fixed list of usage events to an analytics service, which you can switch off. It uses an attribution service to learn which advertisement or link brought you to the app. If you buy Rasikh Plus, Apple takes the payment and our subscription provider receives the purchase record. Each of these is described below, with the name of the company involved.
 
 ---
 
@@ -20,7 +20,7 @@ Rasikh is made by TJB Ventures FZE, a company registered in Ajman Free Zone, Uni
 - Your account holds your email address, a random account identifier, the date it was created, and your name if Apple supplied one. Supabase stores it in India. (Section 3)
 - A fixed list of usage events goes to PostHog in the European Union, with your account identifier attached when you are signed in. You can switch it off. (Section 4)
 - AppsFlyer, in the United States, learns that the app was installed or opened and which link or advertisement led to it. Your advertising identifier is included only if you allow tracking when iOS asks. (Section 5)
-- RevenueCat, in the United States, holds your account identifier so a paid tier could work later. There is nothing to buy in this version. (Section 6)
+- Rasikh Plus is optional. Apple takes the payment. RevenueCat, in the United States, holds your account identifier and, if you buy Plus, the purchase record Apple sends it. (Section 6)
 - Kit, in the United States, holds your email address only if you subscribe to email updates. (Section 7)
 
 | Information | Where it is processed | Why | Legal basis | Kept for |
@@ -29,7 +29,7 @@ Rasikh is made by TJB Ventures FZE, a company registered in Ajman Free Zone, Uni
 | Your email address, your name if Apple gives us one, and an account identifier | Supabase, our sign-in provider (India) | So you can sign in, and so a future version can restore your settings on a new phone | Providing the service you asked for (GDPR Article 6(1)(b)), and your explicit consent when you create the account (Article 9(2)(a)) | Until you delete the account |
 | A fixed list of usage events (which screens you opened, which features you used, that a log entry happened) with your account identifier attached when you are signed in | PostHog, our analytics provider (European Union) | To see which parts of the app are used and where people get stuck | Your consent (Articles 6(1)(a) and 9(2)(a)) | 12 months |
 | That the app was installed or opened, the device identifier iOS gives our app (the IDFV), and, only if you allow it when asked, your advertising identifier (the IDFA) | AppsFlyer, our attribution provider (United States) | To learn which advertisement or link brought you to the app, and to open the right screen when you follow a link | Your consent (Article 6(1)(a)) | Up to 12 months |
-| Your account identifier | RevenueCat, our subscription provider (United States) | So that a paid tier, if we build one, works without moving your account | Providing the service you asked for (Article 6(1)(b)) | Until you delete the account |
+| Your account identifier and, if you buy Rasikh Plus, the purchase record from Apple: the product, its price and currency, the dates, the subscription status and Apple's transaction identifiers | RevenueCat, our subscription provider (United States) | To unlock Plus, and to count purchases in aggregate, such as how many free trials become subscriptions. Never for advertising | Providing what you bought (Article 6(1)(b)), and your explicit consent when you created the account (Article 9(2)(a)) | As long as the record exists at RevenueCat. Deleting your account does not remove it; write to us and we will (section 10) |
 | Your email address, if you subscribe to email updates | Kit, our mailing provider (United States) | To send you occasional updates about the app | Your consent | While you are subscribed |
 
 We make no automated decisions about you and we do not profile you. Streaks and statistics shown in the app are calculated on your phone, from what you entered, for you alone.
@@ -62,7 +62,7 @@ Rasikh requires an account. After you have chosen your location, calculation met
 
 **What Supabase also sees.** Your phone's IP address when you sign in or your session is refreshed, as any server does.
 
-**What the account is for.** So that a future version can restore your settings on a new phone, and so that a paid tier, if we build one, does not require moving your account. In this version it does little more than let you sign in.
+**What the account is for.** So that a future version can restore your settings on a new phone, and so that Rasikh Plus, if you buy it, is attached to your account. Beyond that, in this version it does little more than let you sign in.
 
 **Deleting it.** Open Settings, then Account, then Delete account. The login and the account record are deleted together, immediately. Section 10 has the details.
 
@@ -81,7 +81,12 @@ Rasikh sends a short, fixed list of usage events to PostHog, our analytics provi
 - you signed out;
 - a practice-log entry was made, with nothing attached;
 - an adhkār occasion was opened: morning, evening or before sleep;
-- the full adhan was played.
+- the full adhan was played;
+- the app was opened for the first time, recorded once you agree to share usage data;
+- a setup screen came into view, and which one, from a fixed set of names;
+- you agreed to share usage data;
+- the Rasikh Plus screen opened, and which locked feature led to it;
+- a Plus purchase finished: which plan, and whether it was purchased, cancelled, pending or failed. No price and no amount.
 
 **What is attached to each event.** The kind of device, the iOS version, the app version and your language setting, added by PostHog's software. PostHog also records when the app was installed, opened, sent to the background or updated. If you are signed in, your account identifier is attached so that your sessions are recognised as one person's. If you are not, PostHog assigns a random identifier. We have told PostHog not to derive a location from your IP address.
 
@@ -117,7 +122,27 @@ Rasikh uses AppsFlyer for two things: opening the right screen when you follow a
 
 ## 6. Purchases
 
-This version of Rasikh has no purchases, no subscription and no payment. RevenueCat, the service that would manage a subscription, is included now so that a paid tier later does not require moving anyone's account. It receives your account identifier and nothing else: no email address, no name, no usage events. If a paid tier is ever offered, prayer times, notifications, qibla, the tracker and the core adhkār will stay free, and this notice will be updated before any payment feature is released.
+Rasikh Plus is an optional paid tier. Everything that was free stays free: prayer times, prayer alerts and the adhan, the qibla, the tracker and its export, the adhkār and the next-prayer widget. None of it needs Plus.
+
+**Who takes the payment.** Apple does, through your Apple Account. We never take a payment. We never see your card details or your billing address.
+
+**What RevenueCat receives.** RevenueCat, our subscription provider in the United States, receives your purchase record from Apple. That is which Plus product you bought, its price and currency, the dates of purchase, renewal and expiry, and the subscription's status: free trial, active, cancelled, refunded or in a billing grace period. It also receives Apple's transaction identifiers. The record is linked to the same account identifier RevenueCat already held. RevenueCat also sees the kind of device, the iOS version and the app version.
+
+**What we use it for.** To unlock Plus on your phone. And to count purchases in aggregate, for example how many free trials become subscriptions. We never use it for advertising.
+
+**Never sent to RevenueCat.** Your location, your prayer times, your record of practice, your tasbīḥ counts, your email address, your name, or any usage event.
+
+**Analytics.** If usage analytics are on, PostHog also learns that the Plus screen opened, and which plan a purchase was for and how it ended. It never receives a price or an amount. Section 4 has the list.
+
+**Apple's privacy label.** The App Store page lists "Purchase History", linked to you, used for App Functionality and Analytics, not used for tracking. It means the record of what you bought in Rasikh, described above. It does not cover purchases in other apps.
+
+**Trial reminder.** If you start a free trial, the reminder that it is ending is scheduled by iOS on your phone, like a prayer alert. No server is involved.
+
+**Restoring a purchase.** Tap "Restore purchase" on the Plus screen. The app asks Apple for the purchases made with your Apple Account, and unlocks Plus if it finds one. This works on a new phone too.
+
+**Cancelling.** On your iPhone, open Settings, tap your name (your Apple Account), then Subscriptions, then Rasikh. After you cancel, Plus stays on until the end of the period you paid for. We cannot cancel for you. Refunds are decided by Apple, at reportaproblem.apple.com. A lifetime purchase has nothing to cancel.
+
+**Kept for.** RevenueCat keeps your purchase record for as long as it exists there. Deleting your Rasikh account signs you out of RevenueCat but does not delete that record. Write to us and we will have RevenueCat delete it (section 10). Apple keeps its own record of your purchase under Apple's privacy policy.
 
 ## 7. Email updates
 
@@ -150,7 +175,7 @@ We may disclose personal data where the law requires it or to establish or defen
 
 ## 10. Deleting your data
 
-**Your account.** Settings, then Account, then Delete account. After you confirm, the login is deleted at Supabase and the account record with it, immediately and without a waiting period. Deleting your account also instructs PostHog to delete the events attached to your account identifier and AppsFlyer to delete what it holds for your device. If you would rather we did it, write to us.
+**Your account.** Settings, then Account, then Delete account. After you confirm, the login is deleted at Supabase and the account record with it, immediately and without a waiting period. Deleting your account also instructs PostHog to delete the events attached to your account identifier and AppsFlyer to delete what it holds for your device. It does not delete your purchase record at RevenueCat. Write to us and we will have it deleted. If you would rather we did all of this, write to us.
 
 **Your record of practice.** Deleting your account does not delete it, because it was never in the account. Use the Delete control on the Tracker's data screen. Removing the app also removes it. No app can promise the underlying bytes are wiped from the phone's memory; what we can say is that the record is encrypted by iOS and unreadable while the phone is locked.
 
@@ -180,13 +205,13 @@ You may have the right to access your personal data, correct it, erase it, restr
 
 **United Kingdom and European Economic Area.** Information about religious practice is special-category data under Article 9. Your record of practice, your location and your prayer times are processed only on your phone; we do not receive them. We treat the fact that you use Rasikh as special-category data too, because using a Muslim daily-practice app indicates a religious affiliation. Our legal basis for the account, the usage events, the attribution records and the email list is therefore your explicit consent (Articles 6(1)(a) and 9(2)(a)); for running the account we also rely on Article 6(1)(b). You may withdraw consent at any time, and withdrawing does not affect anything done before. We have no office in the EU or UK and have not appointed a representative under Article 27; we will appoint one, and name them here, if our processing of EU or UK data stops being occasional and small in scale.
 
-**United States.** Most state privacy laws do not apply to us by their thresholds, but we offer these rights to everyone in the US. What we collect falls in the categories those laws call identifiers and internet activity: an email address, a name if Apple supplied one, an account identifier, a device identifier for our own app, and the usage events in section 4. We do not sell personal data and do not share it for cross-context behavioural advertising. We treat what we hold as sensitive personal information and use it only for the purposes stated. We do not discriminate against anyone for exercising a right.
+**United States.** Most state privacy laws do not apply to us by their thresholds, but we offer these rights to everyone in the US. What we collect falls in the categories those laws call identifiers, internet activity and, for Rasikh Plus, commercial information: an email address, a name if Apple supplied one, an account identifier, a device identifier for our own app, the usage events in section 4, and, if you buy Rasikh Plus, the record of that purchase (section 6). We do not sell personal data and do not share it for cross-context behavioural advertising. We treat what we hold as sensitive personal information and use it only for the purposes stated. We do not discriminate against anyone for exercising a right.
 
 **Indonesia and Malaysia.** Both countries' data protection laws treat information about religious belief as requiring particular protection and give you rights to see, correct and delete what a company holds. What the app records of your practice stays on your phone; what we hold is described above.
 
 ## 13. Retention
 
-On your phone: until you delete it or remove the app. Your account: until you delete it. Usage events: 12 months. Attribution records: up to 12 months from the install. The email list: while you are subscribed, with inactive addresses deleted after 24 months. We keep a record of the fact and date of your consent for as long as we hold the data it covers and for one year afterwards.
+On your phone: until you delete it or remove the app. Your account: until you delete it. Usage events: 12 months. Attribution records: up to 12 months from the install. Purchase records at RevenueCat: until you ask us to delete them (section 6). The email list: while you are subscribed, with inactive addresses deleted after 24 months. We keep a record of the fact and date of your consent for as long as we hold the data it covers and for one year afterwards.
 
 ## 14. Children
 
