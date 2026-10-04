@@ -3,7 +3,7 @@ layout: default
 title: Privacy Policy
 eyebrow: Privacy
 effective: 4 August 2026
-updated: 2026-10-XX
+updated: 2026-10-05
 permalink: /privacy.html
 ---
 
