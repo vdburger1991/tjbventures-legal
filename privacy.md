@@ -3,7 +3,7 @@ layout: default
 title: Privacy Policy
 eyebrow: Privacy
 effective: 4 August 2026
-updated: 29 September 2026
+updated: 2026-10-XX
 permalink: /privacy.html
 ---
 
@@ -60,7 +60,7 @@ Payment itself is handled entirely by Apple. We never see your card details.
 
 ## 4A. Measuring our advertising (AppsFlyer)
 
-From version 1.0.6, Orla includes AppsFlyer, a measurement service. We use it for one thing: to see which of our advertisements, for example on Instagram or in the App Store, led to a download. That lets us stop paying for the ones that do not work.
+From version 1.0.6, Orla includes AppsFlyer, a measurement service. We use it for one thing: to see which of our advertisements, for example on Instagram or in the App Store, led to a download, so that we stop paying for the ones that do not work.
 
 When you install and open Orla, AppsFlyer receives:
 
@@ -69,13 +69,18 @@ When you install and open Orla, AppsFlyer receives:
 - basic technical information: device model, operating system version, language, and your IP address, which AppsFlyer uses to work out your approximate country or region and to detect fraudulent installs
 - whether the download followed one of our Apple Search Ads advertisements, the same Apple token described in section 4
 
-AppsFlyer receives **no** symptom, cycle, hormone therapy, supplement, note, or Apple Health information, and nothing you type into the app. It has no technical route to that data. Orla does not read your device's advertising identifier (IDFA) and never asks for permission to track you.
+AppsFlyer receives **no** symptom, cycle, hormone therapy, supplement, note, or Apple Health information, and nothing you type into the app. It has no technical route to that data.
 
-For advertisements on Meta (Instagram and Facebook), Orla uses Apple's SKAdNetwork. With SKAdNetwork, your iPhone itself later tells the advertising network, in a delayed, aggregated form designed by Apple, whether an advertisement led to an install. It carries no identifier for you or your device, and a copy goes to AppsFlyer.
+**The tracking question.** From version 1.0.7, Orla shows a short explanation and then Apple's own question: whether Orla may use your device's advertising identifier (IDFA). Orla works the same whichever you choose.
+
+- **If you allow it,** AppsFlyer reads the advertising identifier and uses it to match your installation to the advertisement you saw. For advertisements on Meta (Instagram and Facebook), AppsFlyer shares with Meta that the app was installed and opened, whether a free trial or subscription started, and your advertising identifier and IP address, so that Meta can tell us which advertisement worked. Meta may combine this with what it already knows about your Meta account, under Meta's own privacy policy.
+- **If you do not allow it,** iOS gives Orla no advertising identifier and nothing is shared with Meta at the level of your device. Meta learns only through Apple's SKAdNetwork, in a delayed, aggregated form designed by Apple, whether an advertisement led to an install. It carries no identifier for you or your device, and a copy goes to AppsFlyer.
+
+You can change your answer at any time in iPhone Settings → Privacy & Security → Tracking.
 
 Orla also gives RevenueCat the AppsFlyer installation identifier. This lets us see, in aggregate, whether people who came from an advertisement went on to subscribe. It connects the two services' records for the same installation. It does not connect them to your name, email address, or anything you log.
 
-AppsFlyer acts as our processor. Its privacy policy is at [appsflyer.com/legal/services-privacy-policy](https://www.appsflyer.com/legal/services-privacy-policy/).
+AppsFlyer acts as our processor. Its privacy policy is at [appsflyer.com/legal/services-privacy-policy](https://www.appsflyer.com/legal/services-privacy-policy/). Meta's is at [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/).
 
 ## 5. Diagnostic events
 
@@ -95,10 +100,10 @@ When you generate a summary for a medical appointment, the PDF is created on you
 
 These are statements about the **app**. Our marketing website is a separate thing and works differently — see section 14.
 
-- No advertising inside the app, and no reading of your advertising identifier (IDFA). Orla never asks for permission to track you. To learn which of our own advertisements led to a download, Orla uses Apple's attribution token (section 4) and AppsFlyer with Apple's SKAdNetwork (section 4A).
+- No advertising inside the app. Orla reads your advertising identifier (IDFA) only if you allow it when iOS asks, and only to learn which of our own advertisements led to a download (section 4A). To learn the same thing without it, Orla uses Apple's attribution token (section 4) and Apple's SKAdNetwork (section 4A).
 - No crash-reporting software, and no analytics software that can see anything you log. The subscription steps in section 4 go through RevenueCat. AppsFlyer (section 4A) measures installs and app opens only.
 - No sale or rental of personal information to anyone, for any purpose.
-- No tracking of you across other companies' apps or websites.
+- No tracking of you across other companies' apps or websites unless you allow it when iOS asks, and then only to measure our own advertisements (section 4A).
 - No sharing of your health information with data brokers, advertisers, employers, or insurers.
 
 ## 8. Deleting your information
@@ -121,11 +126,11 @@ On-device information is kept until you delete it. Subscription records held by 
 
 ## 10. Your rights
 
-**United Kingdom and European Economic Area (UK GDPR / GDPR).** Health information is a special category of personal data and receives additional protection. Our lawful basis for handling what you log is your explicit consent, given on the consent screen in the app and withdrawable at any time by deleting your data or by declining to continue. Our lawful basis for subscription information is performance of our contract with you. Our lawful basis for the advertising measurement in section 4A is our legitimate interest in knowing which of our advertisements work. You can object to it by contacting us.
+**United Kingdom and European Economic Area (UK GDPR / GDPR).** Health information is a special category of personal data and receives additional protection. Our lawful basis for handling what you log is your explicit consent, given on the consent screen in the app and withdrawable at any time by deleting your data or by declining to continue. Our lawful basis for subscription information is performance of our contract with you. Our lawful basis for the advertising measurement in section 4A is our legitimate interest in knowing which of our advertisements work; reading your advertising identifier and sharing it with Meta happens only with your consent, which you give or refuse in Apple's tracking question and can withdraw in iPhone Settings. You can object to it by contacting us.
 
 You have the right to access, correct, delete, restrict, and object to processing, and to data portability. Because what you log stays on your device, you exercise most of these directly: your records are visible and editable in the app, exportable as a PDF, and deletable in Settings. For subscription information, contact us using the details below. You may also complain to your national supervisory authority, or to the Information Commissioner's Office in the UK.
 
-**California (CCPA/CPRA).** We do not sell or share personal information as those terms are defined, and we do not use sensitive personal information for purposes requiring an opt-out. The advertising pixel on our marketing website, described in section 14, is operated with Meta's Limited Data Use setting, which restricts what Meta may do with a California resident's data. You may request to know, delete, or correct, and you will not be treated differently for asking.
+**California (CCPA/CPRA).** We do not sell personal information. If you allow tracking when iOS asks, the advertising measurement in section 4A may count as 'sharing' under California law; you can opt out at any time by turning tracking off for Orla in iPhone Settings → Privacy & Security → Tracking. We do not use sensitive personal information for purposes requiring an opt-out. The advertising pixel on our marketing website, described in section 14, is operated with Meta's Limited Data Use setting, which restricts what Meta may do with a California resident's data. You may request to know, delete, or correct, and you will not be treated differently for asking.
 
 **United Arab Emirates (PDPL).** We handle personal data under Federal Decree-Law No. 45 of 2021. You may contact us to exercise the rights that law provides.
 
@@ -137,7 +142,7 @@ Orla is intended for adults and is not directed at anyone under 18. We do not kn
 
 ## 12. International transfers
 
-We hold no health data, so there is no international transfer of it by us. Subscription information, including the subscription steps described in section 4, is processed by RevenueCat, which operates in the United States, under contractual safeguards including the applicable standard contractual clauses. The advertising measurement in section 4A is processed by AppsFlyer outside your country, including in the United States and the European Union, under the same kind of safeguards.
+We hold no health data, so there is no international transfer of it by us. Subscription information, including the subscription steps described in section 4, is processed by RevenueCat, which operates in the United States, under contractual safeguards including the applicable standard contractual clauses. The advertising measurement in section 4A is processed by AppsFlyer outside your country, including in the United States and the European Union, under the same kind of safeguards, and, if you allow tracking, by Meta Platforms in the United States and Ireland.
 
 ## 13. Security
 
