@@ -100,10 +100,10 @@ When you generate a summary for a medical appointment, the PDF is created on you
 
 These are statements about the **app**. Our marketing website is a separate thing and works differently — see section 14.
 
-- No advertising inside the app. Orla reads your advertising identifier (IDFA) only if you allow it when iOS asks, and only to learn which of our own advertisements led to a download (section 4A). To learn the same thing without it, Orla uses Apple's attribution token (section 4) and Apple's SKAdNetwork (section 4A).
+- No advertising inside the app. Orla reads your advertising identifier (IDFA) only if you allow it when iOS asks, and only to learn which of our own advertisements led to a download (section 4A). If you do not allow it, no advertising identifier is read, but AppsFlyer still tells Meta the app was installed or opened and that a trial or subscription started, with your IP address, marked as not opted in to tracking, for aggregate measurement only. To learn the same thing without the identifier, Orla uses Apple's attribution token (section 4) and Apple's SKAdNetwork (section 4A).
 - No crash-reporting software, and no analytics software that can see anything you log. The subscription steps in section 4 go through RevenueCat. AppsFlyer (section 4A) measures installs and app opens only.
 - No sale or rental of personal information to anyone, for any purpose.
-- No tracking of you across other companies' apps or websites unless you allow it when iOS asks, and then only to measure our own advertisements (section 4A).
+- No advertising profile of you, and no use of your advertising identifier unless you allow it when iOS asks. Whatever you answer, the install, open and trial or subscription events described in section 4A go to Meta for measuring our own advertisements, and only for that.
 - No sharing of your health information with data brokers, advertisers, employers, or insurers.
 
 ## 8. Deleting your information
