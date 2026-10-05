@@ -4,7 +4,7 @@ title: Privacy Notice
 eyebrow: Privacy
 description: What happens to your information in Rasikh. Your location and your record of practice never leave your device.
 effective: 21 August 2026
-updated: 30 September 2026
+updated: 5 October 2026
 permalink: /rasikh-privacy.html
 ---
 
@@ -108,7 +108,7 @@ Rasikh uses AppsFlyer for two things: opening the right screen when you follow a
 
 **What AppsFlyer receives.** That the app was installed or opened. The identifier iOS gives an app for the device it is on, called the identifier for vendor (IDFV); it is specific to our app and is reset when you delete the app. Your IP address, the kind of device and the iOS version. The parameters carried by a link you followed. Your account identifier, if you are signed in. And, only if you allowed tracking when asked, your advertising identifier (IDFA).
 
-**The tracking question.** After you finish setting up the app and sign in, a screen explains what the answer is for, and then iOS asks whether to allow the app to track you across apps and websites. If you allow it, AppsFlyer reads your advertising identifier and uses it to tell us which advertisement or link brought you to Rasikh. If you refuse or never answer, no advertising identifier is read, and every feature of the app works exactly the same. You are not asked again. You can change your answer in iOS Settings under Privacy & Security, then Tracking.
+**The tracking question.** After you finish setting up the app and sign in, a screen explains what the answer is for, and then iOS asks whether to allow the app to track you across apps and websites. If you allow it, AppsFlyer reads your advertising identifier and uses it to tell us which advertisement or link brought you to Rasikh. If you refuse or never answer, no advertising identifier is read. AppsFlyer still sends Meta and TikTok that the app was installed or opened, together with your device's IDFV and your IP address (which gives an approximate location), marked as not opted in to tracking. Meta and TikTok use these only in aggregate to measure our advertisements; they do not build an advertising profile of you from them. Every feature of the app works exactly the same. You are not asked again. You can change your answer in iOS Settings under Privacy & Security, then Tracking.
 
 **What we do not do with it.** We do not sell it, give it to a data broker, build an advertising profile of you, or use it to aim advertisements at you anywhere. The consent Rasikh sends to AppsFlyer refuses personalised advertising for everyone, in every country, whatever you answered.
 
