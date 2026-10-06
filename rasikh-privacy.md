@@ -116,7 +116,9 @@ Rasikh uses AppsFlyer for two things: opening the right screen when you follow a
 
 **Clipboard.** AppsFlyer's clipboard-based link matching is switched off. Rasikh does not read your clipboard.
 
-**Switching it off.** The "Share usage analytics" switch in Settings also covers attribution: with it off, AppsFlyer is not started at all. iOS's tracking question covers the advertising identifier separately.
+**Meta's app-events software.** Rasikh also contains Meta's own measurement software, because Meta requires it to measure app advertisements on iPhone. It starts at the same moment as AppsFlyer and never before, and sends Meta that the app was installed and opened, and any in-app purchase, with basic device information and your IP address; your advertising identifier only if you allowed tracking. It never receives your coordinates, your record of practice, your tasbīḥ counts, your email address or anything you read.
+
+**Switching it off.** The "Share usage analytics" switch in Settings also covers attribution: with it off, neither AppsFlyer nor Meta's software is started at all. iOS's tracking question covers the advertising identifier separately.
 
 **Kept for.** No longer than 12 months from the install.
 
@@ -161,7 +163,7 @@ Every email has an unsubscribe link. Unsubscribing stops the emails immediately,
 - No remote configuration. The app behaves as the version you installed; we can change it only by shipping an update through the App Store.
 - No sync. Nothing you record is copied to a server, signed in or not.
 
-The app contains one piece of open-source code that does arithmetic: Adhan, a prayer-time calculation library. It makes no network requests. The commercial services in this notice are Supabase, PostHog, AppsFlyer, RevenueCat and Kit, and the sections above say what each receives.
+The app contains one piece of open-source code that does arithmetic: Adhan, a prayer-time calculation library. It makes no network requests. The commercial services in this notice are Supabase, PostHog, AppsFlyer, Meta, RevenueCat and Kit, and the sections above say what each receives.
 
 ## 9. Who else receives your data, and where
 

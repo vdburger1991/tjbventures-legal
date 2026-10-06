@@ -42,7 +42,7 @@ If you grant Health permission, Orla reads wrist temperature, heart rate variabi
 
 ## 4. Subscription information
 
-Orla uses RevenueCat to manage App Store subscriptions. RevenueCat is one of two third-party software components in the app (the other, AppsFlyer, is described in section 4A). It receives:
+Orla uses RevenueCat to manage App Store subscriptions. RevenueCat is one of three third-party software components in the app (the others, AppsFlyer and Meta's app-events software, are described in section 4A). It receives:
 
 - an anonymous identifier generated for your installation, not your name or email address
 - your subscription status and purchase history (plan, price, renewal, cancellation)
@@ -79,6 +79,8 @@ AppsFlyer receives **no** symptom, cycle, hormone therapy, supplement, note, or 
 You can change your answer at any time in iPhone Settings → Privacy & Security → Tracking.
 
 Orla also gives RevenueCat the AppsFlyer installation identifier. This lets us see, in aggregate, whether people who came from an advertisement went on to subscribe. It connects the two services' records for the same installation. It does not connect them to your name, email address, or anything you log.
+
+**Meta's app-events software (from version 1.0.8).** Orla also contains Meta's own measurement software, because Meta requires it to measure app advertisements on iPhone. It starts only after you have answered iOS's tracking question, and sends Meta that the app was installed and opened, and that a subscription was purchased, with basic device information and your IP address. If you allowed tracking, your advertising identifier is included. If you did not, iOS gives the software no advertising identifier and Meta uses the events only in aggregate to measure our advertisements. It receives nothing you log, and it does not receive your location.
 
 AppsFlyer acts as our processor. Its privacy policy is at [appsflyer.com/legal/services-privacy-policy](https://www.appsflyer.com/legal/services-privacy-policy/). Meta's is at [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/).
 
