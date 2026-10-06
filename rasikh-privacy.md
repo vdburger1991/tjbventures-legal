@@ -4,7 +4,7 @@ title: Privacy Notice
 eyebrow: Privacy
 description: What happens to your information in Rasikh. Your location and your record of practice never leave your device.
 effective: 21 August 2026
-updated: 5 October 2026
+updated: 6 October 2026
 permalink: /rasikh-privacy.html
 ---
 
