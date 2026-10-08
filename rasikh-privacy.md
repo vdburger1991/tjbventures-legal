@@ -83,12 +83,9 @@ Rasikh sends a fixed list of usage events to PostHog, our analytics provider, ho
 - what you answered when iOS asked about tracking;
 - you chose a city by hand, recorded as a two-letter country code;
 - a qibla visit ended: whether the direction was found, whether calibration was suggested, roughly how long it took to line up (in bands such as "under 5 seconds"), and which button opened it. Never a direction, a bearing or a coordinate;
-- an adhkār occasion was opened: morning, evening or before sleep;
-- the full adhan was played;
-- a feature was opened, and which one, from a fixed set of names;
-- a setting that changes prayer times was changed: which setting (method, Asr, high latitude or an adjustment), never its new value;
-- an alert setting was changed: which one, and on or off. A time you choose for a reminder is never sent;
-- your daily reminders were set at setup or turned on later, a reminder paused itself after a week unopened, and you opened a reminder or a notification about Jumuʿah, the end of a free trial or the alert safety check. Never an adhan or a prayer reminder;
+- a setting that changes prayer times was changed: which setting (method, Asr, high latitude, an adjustment, or whether the place comes from your location or a city you chose), never its new value;
+- an alert setting was changed: which one, and whether it was turned on or off, changed, or which bundled adhan sound was chosen. A time you choose for a reminder is never sent;
+- your daily reminders were set at setup; the one-time offer to turn them on was shown, used or hidden; a reminder paused itself; and you opened a reminder or a notification about Jumuʿah, the end of a free trial or the alert safety check. Never an adhan or a prayer reminder;
 - a Rasikh Plus feature was used: a widget added or removed (by widget type), a theme chosen, a countdown started or ended, a control used, the year review exported;
 - the Rasikh Plus screen opened, and which locked feature led to it; which plan you selected; that you tapped the button to start a trial or buy, and whether a trial was offered; that you tapped Restore; how you left the screen without buying and roughly how long you looked (in bands); a page of the Plus preview came into view;
 - a Plus purchase finished: which plan, and whether it was purchased, cancelled, pending or failed. No price and no amount;
