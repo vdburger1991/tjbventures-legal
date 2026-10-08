@@ -144,7 +144,7 @@ Rasikh Plus is an optional paid tier. Everything that was free stays free: praye
 
 **Analytics.** If usage analytics are on, PostHog also learns the steps on the Plus screen, which plan a purchase was for and how it ended. It never receives a price or an amount. Section 4 has the list.
 
-**Apple's privacy label.** The App Store page lists "Purchase History", linked to you, used for App Functionality and Analytics, not used for tracking. It means the record of what you bought in Rasikh, described above. It does not cover purchases in other apps.
+**Apple's privacy label.** The App Store page lists "Purchase History", linked to you, used for App Functionality, Analytics and Third-Party Advertising, and used for tracking. It means the record of what you bought in Rasikh: RevenueCat's copy, described above, is never used for advertising, but Meta's measurement software (section 5) learns of an in-app purchase so that Meta can measure our advertisements, with your advertising identifier only if you allowed tracking. It does not cover purchases in other apps.
 
 **Trial reminder.** If you start a free trial, the reminder that it is ending is scheduled by iOS on your phone, like a prayer alert. No server is involved.
 
