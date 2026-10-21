@@ -3,7 +3,7 @@ layout: default
 title: Privacy Policy
 eyebrow: Privacy
 effective: 4 August 2026
-updated: 2026-10-06
+updated: 2026-10-21
 permalink: /privacy.html
 ---
 
@@ -13,9 +13,11 @@ Orla runs no server that holds your health information. There is no Orla account
 
 ## 1. What you log in Orla
 
-Symptoms, severity, cycle dates, hormone therapy (type, dose, route, start and stop dates), supplements, and any notes or questions you write.
+Symptoms, severity, cycle dates, hormone therapy (type, dose, route, start and stop dates), supplements, any notes or questions you write, and your journal (the word you choose for a day and anything you write about it).
 
 **Where it is stored.** On your device, in the app's own encrypted storage, protected by iOS Data Protection and your device passcode or biometric lock.
+
+**Your journal.** From version 1.1.0, journal entries are kept in the same place, on your device only. They are never part of the PDF summary you export and never sent to us, to RevenueCat or to anyone else. You can lock them behind Face ID in Settings.
 
 **Who can see it.** You. We cannot. It is not sent to any server we operate, because we do not operate one.
 
@@ -50,7 +52,9 @@ Orla uses RevenueCat to manage App Store subscriptions. RevenueCat is one of thr
 
 **Where people stop before subscribing.** From version 1.0.4, Orla also tells RevenueCat the date and time a person first reaches each step of the set-up screens and the subscription screen. The list of step names is fixed in the app — each one names a screen and its place in that sequence, never an answer, a symptom, or free text, and it does not change with anything you enter or choose. Orla also tells RevenueCat when a plan is tapped, a purchase starts, a purchase ends without access, or the payment sheet is dismissed.
 
-Each step carries a date and time and nothing else. They are attached to the anonymous installation identifier listed above, not to a name, an email address, or an account. We use them for one thing: to see at which step people stop before subscribing, so that we can fix that step. They are not used to advertise to you, and not used to track you across other apps or websites. RevenueCat keeps them on the same basis as the rest of the subscription record described in section 9.
+Each step carries a date and time and nothing else. They are attached to the anonymous installation identifier listed above, not to a name, an email address, or an account. We use them for one thing: to see at which step people stop before subscribing, so that we can fix that step.
+
+From version 1.1.0, Orla also tells RevenueCat the date of a few journal steps: the first entry, writing on three of the first seven days, and turning the evening reminder on or off. These carry a date and time only, never the word you chose or anything you wrote, and are used only to see whether the journal is useful. These steps are not used to advertise to you, and not used to track you across other apps or websites. RevenueCat keeps them on the same basis as the rest of the subscription record described in section 9.
 
 **Which advertisement brought you here.** From version 1.0.5, when Orla is first opened it asks Apple for a short token that says whether the download followed a tap on one of our Apple Search Ads advertisements in the App Store, and if so which campaign, ad group and keyword. Apple designs this token so that it identifies the advertisement, not you: it carries no name, no email address, no advertising identifier, and nothing about your searches. Orla passes the token once to RevenueCat, which asks Apple what it stands for and records the answer against the same anonymous installation identifier. We use it for one thing: to see which advertisements bring people to Orla, so that we spend less on the ones that do not. It is not used to advertise to you, and not used to track you across other companies' apps or websites. If the download did not follow one of our advertisements, Apple's answer says so and nothing else is recorded.
 
