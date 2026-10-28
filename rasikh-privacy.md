@@ -4,7 +4,7 @@ title: Privacy Notice
 eyebrow: Privacy
 description: What happens to your information in Rasikh. Your location and your record of practice never leave your device.
 effective: 21 August 2026
-updated: 21 October 2026
+updated: 27 October 2026
 permalink: /rasikh-privacy.html
 ---
 
@@ -44,6 +44,8 @@ We make no automated decisions about you and we do not profile you. Streaks and 
 
 **Your record of practice.** If you use the tracker to record which prayers you prayed, that record is information about your religious practice. It is stored on your phone at the strongest protection level iOS offers: it cannot be read while your phone is locked, and it is excluded from device backups. It is not uploaded to your account, not synced, and not backed up to any server. Creating an account does not change this. Analytics learn nothing about it: not that you logged a prayer, not which prayer, not when, not how many.
 
+**Your starting point.** The last setup screen asks where you are starting from: new to Islam, returning to prayer, or praying regularly; you can also skip it. That answer is information about your religious belief, so it is stored only on your phone, in a file of its own at the strongest protection level iOS offers, and excluded from device backups. It is not in your account, not synced, not shared with the widget and not in any export. You can change it, or set it back to "Not set", in Settings under Starting point. Deleting your account or deleting your record of practice also deletes it; signing out does not.
+
 **Export and delete.** The Tracker screen has an Export control that writes a copy of your record to a file and hands it to the iOS share sheet. That copy is then an ordinary file under your control; we cannot see or delete it. The Delete control on the Tracker's data screen removes the record from the app. Because the storage is excluded from backups, there is no backup copy to restore.
 
 **Notifications and the adhan.** Prayer-time alerts are scheduled by iOS on your phone from times your phone calculated. No server is involved. The adhan recording is inside the app and is played from there. Tapping "Log this prayer" on an alert writes to the record described above, on your phone. The morning and evening adhkār reminders, if they are on, are scheduled by iOS on your phone in the same way. The times you choose for them stay on your phone.
@@ -77,6 +79,7 @@ Rasikh sends a fixed list of usage events to PostHog, our analytics provider, ho
 - a screen was opened, and which one, from a fixed set of screen names. This includes the adhkār, tasbīḥ, qibla and adhan screens, but never which dhikr or text you read. The time between one screen and the next is how long you spent there;
 - the app was opened for the first time, and setup finished;
 - a setup screen came into view, and which one, from a fixed set of names; and, once, how setup ended: whether you allowed location or chose a city, whether you allowed notifications, and whether the ringer step was shown;
+- the starting point you chose at setup (new to Islam, returning to prayer, praying regularly, or skipped), sent once as a count with a random identifier and a separate random session, never your account identifier, and only if usage data is on. Its technical timing could in principle be matched with your other usage events by someone with access to Rasikh's analytics; we do not do that. A change made later in Settings is not sent;
 - you agreed to share usage data;
 - the sign-in screen came into view, and which sign-in method you tapped; you signed in, and by which method; you signed out;
 - what you answered when iOS asked about notifications, and whether that permission later changed;
@@ -201,6 +204,8 @@ We may disclose personal data where the law requires it or to establish or defen
 **Your account.** Settings, then Account, then Delete account. After you confirm, the login is deleted at Supabase and the account record, any feedback you sent and the record of gifts you have given with it, immediately and without a waiting period. Deleting your account also instructs PostHog to delete the events attached to your account identifier and AppsFlyer to delete what it holds for your device. It does not delete your purchase record at RevenueCat. Write to us and we will have it deleted. If you would rather we did all of this, write to us.
 
 **Your record of practice.** Deleting your account does not delete it, because it was never in the account. Use the Delete control on the Tracker's data screen. Removing the app also removes it. No app can promise the underlying bytes are wiped from the phone's memory; what we can say is that the record is encrypted by iOS and unreadable while the phone is locked.
+
+**Your starting point.** Deleting your account, or using the Delete control on the Tracker's data screen, removes it from your phone, and so does removing the app. The counts already sent carry no account identifier and we do not match them to anyone, so we cannot pick out yours to delete it.
 
 **Everything else on the phone.** Removing Rasikh removes your settings, the last coordinate it used and the widget data. Removing the app does not delete your account. Delete the account first, or write to us afterwards.
 
