@@ -18,7 +18,9 @@ The private menopause and HRT symptom tracker.
 
 Prayer times, adhan notifications, qibla and daily practice.
 
+- [About Rasikh](/rasikh.html)
 - [Privacy Policy](/rasikh-privacy.html) — what happens to your information (in short: your location and your practice log never leave your device).
+- [Delete your account](/rasikh-delete-account.html) — with or without the app.
 
 ## Contact
 
