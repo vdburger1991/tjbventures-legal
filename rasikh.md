@@ -13,6 +13,7 @@ short lessons and duas.
 Your location and your record of practice stay on your phone. An account holds your email address and little
 else. You can sign in with your email address, with Apple or with Google.
 
+- [Get Rasikh](https://rasikh.onelink.me/S5G4/web)
 - [Privacy Notice](/rasikh-privacy.html)
 - [Terms of Use](/rasikh-terms.html)
 - [Delete your account](/rasikh-delete-account.html)
