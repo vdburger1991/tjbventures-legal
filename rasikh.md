@@ -14,6 +14,7 @@ Your location and your record of practice stay on your phone. An account holds y
 else. You can sign in with your email address, with Apple or with Google.
 
 - [Privacy Notice](/rasikh-privacy.html)
+- [Terms of Use](/rasikh-terms.html)
 - [Delete your account](/rasikh-delete-account.html)
 - Contact: [rasikh@tjbventures.ai](mailto:rasikh@tjbventures.ai)
 
