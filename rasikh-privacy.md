@@ -4,7 +4,7 @@ title: Privacy Notice
 eyebrow: Privacy
 description: What happens to your information in Rasikh. Your location and your record of practice never leave your device.
 effective: 21 August 2026
-updated: 24 November 2026
+updated: 25 November 2026
 permalink: /rasikh-privacy.html
 ---
 
@@ -96,7 +96,7 @@ Rasikh sends a fixed list of usage events to PostHog, our analytics provider, ho
 - a Plus purchase finished: which plan, and whether it was purchased, cancelled, pending or failed. No price and no amount;
 - you closed the store's purchase window (Apple's or Google Play's) without buying and were asked, once, "What stopped you?": which of four fixed answers you tapped (the price, not wanting automatic renewal, no card on the Apple Account or no payment method on the Google account, just looking), or that you closed the question;
 - on iPhone, the one-time Rasikh Plus offer after a free trial ended: whether it was shown, on its own screen or as a row on the Plus screen; whether you tapped its button or closed it; whether the purchase went through or failed; or, if it could not be shown, a fixed reason why. No price and no amount;
-- on iPhone, a gift purchase finished: whether it was bought, cancelled, pending or failed, or whether gifts were paused. Never the price, the code, the line you add or who the gift is for;
+- a gift purchase finished: whether it was bought, cancelled, pending or failed, or whether gifts were paused. Never the price, the code, the line you add or who the gift is for;
 - on iPhone, Apple's sheet for redeeming a code was opened, and whether from the Plus screen or from Settings. Apple does not tell us whether a code was then redeemed;
 - the first-week card: which item was shown, tapped or done, and whether you hid the card;
 - you sent feedback: from where, your answer to the Plus question, and whether you wrote a message. Never the message itself;
